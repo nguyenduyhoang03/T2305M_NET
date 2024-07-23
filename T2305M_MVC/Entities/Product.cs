@@ -22,11 +22,12 @@ namespace T2305M_MVC.Entities
 		[Column(name:"description", TypeName = "text")]
 		public string Description { get; set; }
 
-		[Column(name:"category_id")]
-		[Required]
-		public int CategoryId { get; set; }
+		//[Column(name:"category_id")]
+		//[Required]
+		//public int CategoryId { get; set; }
 
 		[ForeignKey("category_id")]
+		[Required]
 		public Category Category { get; set; }
 	}
 }
