@@ -1,4 +1,42 @@
 ﻿<Properties StartupConfiguration="{D91B6837-C315-47BF-80FD-590D1286B648}|https">
-  <MonoDevelop.Ide.ItemProperties.T2305M__MVC FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.T2305M__MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="T2305M_MVC/Program.cs">
+    <Files>
+      <File FileName="T2305M_MVC/Properties/launchSettings.json" Line="10" Column="16" />
+      <File FileName="T2305M_MVC/appsettings.json" Line="11" Column="1" />
+      <File FileName="T2305M_MVC/Program.cs" Line="16" Column="27" />
+      <File FileName="T2305M_MVC/Controllers/HomeController.cs" Line="5" Column="34" />
+      <File FileName="T2305M_MVC/Views/Home/Index.cshtml" Line="10" Column="1" />
+      <File FileName="T2305M_MVC/Views/Home/Hello.cshtml" Line="4" Column="16" />
+      <File FileName="T2305M_MVC/Views/_ViewStart.cshtml" Line="5" Column="1" />
+      <File FileName="T2305M_MVC/Views/Shared/_Layout.cshtml" Line="13" Column="62" />
+      <File FileName="T2305M_MVC/Views/Shared/_CustomLayout.cshtml" Line="8" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="T2305M" expanded="True">
+            <Node name="T2305M_MVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" selected="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

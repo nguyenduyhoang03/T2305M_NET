@@ -1,7 +1,15 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.EntityFrameworkCore;
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// connect db
+string connectionString = "Data Source=localhost,1433;Database=T2305M;User Id=sa;Password=sa123456;TrustServerCertificate=true";
+builder.Services.AddDbContext<T2305M_MVC.Entities.DataContext>(
+    options=> options.UseSqlServer(connectionString)
+    );
+//end
 
 var app = builder.Build();
 
