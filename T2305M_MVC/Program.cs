@@ -31,7 +31,7 @@ app.UseAuthorization();
 // Chọn Action và controller nào là trang chủ
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Hello}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
 

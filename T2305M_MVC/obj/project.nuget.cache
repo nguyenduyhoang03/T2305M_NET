@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nqE7KVsdfP+cQ/qsDIyvuFrJmidMYRToOh53JZckssjcVCQbMhvaWXgQ+87/1nZIKP62wHJuyjWjNP45Rp2xQg==",
+  "dgSpecHash": "BsEzIIQy7mZB7a6DjptQQdj9V94kQy8oV4PMwyrPItSq/5f2UTabhm4LBaEIe9hR0Zm4h0SJCFElHYD5CTz3rQ==",
   "success": true,
   "projectFilePath": "/Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/T2305M_MVC.csproj",
   "expectedPackageFiles": [
@@ -63,10 +63,7 @@
     "/Users/quanghoatrinh/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
     "/Users/quanghoatrinh/.nuget/packages/system.text.json/7.0.0/system.text.json.7.0.0.nupkg.sha512",
     "/Users/quanghoatrinh/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/Users/quanghoatrinh/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512",
-    "/Users/quanghoatrinh/.nuget/packages/microsoft.netcore.app.ref/7.0.14/microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "/Users/quanghoatrinh/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.14/microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
-    "/Users/quanghoatrinh/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.14/microsoft.netcore.app.host.osx-arm64.7.0.14.nupkg.sha512"
+    "/Users/quanghoatrinh/.nuget/packages/system.windows.extensions/6.0.0/system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

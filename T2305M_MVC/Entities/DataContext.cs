@@ -10,6 +10,9 @@ namespace T2305M_MVC.Entities
 
 		public DbSet<Category> Categories { get; set; }
 		public DbSet<Product> Products { get; set; }
+
+		// Brand
+		// User
 	}
 }
 

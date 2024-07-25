@@ -10,8 +10,6 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = T2305M_MVC
 build_property.RootNamespace = T2305M_MVC
 build_property.ProjectDir = /Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
@@ -36,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/Views/Shared/_CustomLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19DdXN0b21MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/Views/Shared/_Head.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19IZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
