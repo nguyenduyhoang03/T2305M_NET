@@ -1,8 +1,8 @@
 ﻿@model List<T2305M_MVC.Entities.Product>
 @{
-    ViewData["Title"] = "Home Page";
-    var count = ViewData["Count"];
-    var categories = (List<T2305M_MVC.Entities.Category>)ViewBag.categories;
+
+    var category = (T2305M_MVC.Entities.Category)ViewBag.category;
+    ViewData["Title"] = category.Name;
 }
 
 <div class="container">
@@ -12,11 +12,7 @@
                 <div class="sidebar__item">
                     <h4>Department</h4>
                     <ul>
-                        @foreach(var item in categories)
-                        {
-                        <li><a asp-controller="Category" asp-action="Index"
-                               asp-route-id="@item.Id">@item.Name</a></li>
-                        }
+                        
                     </ul>
                 </div>
                 <div class="sidebar__item">
@@ -170,7 +166,7 @@
             </div>
         </div>
         <div class="col-lg-9 col-md-7">
-           
+            <h1>@category.Name</h1>
             <div class="filter__item">
                 <div class="row">
                     <div class="col-lg-4 col-md-5">
@@ -197,25 +193,25 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
-                    @foreach(var item in Model)
+                    @foreach (var item in Model)
                     {
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
-                            <ul class="product__item__pic__hover">
-                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                <li><a href="#"><i class="fa fa-retweet"></i></a></li>
-                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-                            </ul>
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
+                                <ul class="product__item__pic__hover">
+                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-retweet"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product__item__text">
+                                <h6><a href="#">@item.Name</a></h6>
+                                <h5>$@item.Price</h5>
+                            </div>
                         </div>
-                        <div class="product__item__text">
-                            <h6><a href="#">@item.Name</a></h6>
-                            <h5>$@item.Price</h5>
-                        </div>
-                    </div>
                     }
-                    
+
                 </div>
-                
+
             </div>
             <div class="product__pagination">
                 <a href="#">1</a>

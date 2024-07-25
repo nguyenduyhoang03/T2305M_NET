@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/quanghoatrinh/Documents/Aptech/SEM3/T2305M_NET/T2305M/T2305M_MVC/Views/Home/Hello.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9IZWxsby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
