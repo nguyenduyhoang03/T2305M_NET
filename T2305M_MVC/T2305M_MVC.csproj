@@ -23,9 +23,11 @@
   <ItemGroup>
     <None Remove="Entity\" />
     <None Remove="Views\Category\" />
+    <None Remove="Views\Product\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Views\Category\" />
+    <Folder Include="Views\Product\" />
   </ItemGroup>
 </Project>

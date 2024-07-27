@@ -11,6 +11,16 @@ builder.Services.AddDbContext<T2305M_MVC.Entities.DataContext>(
     );
 //end
 
+// session
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(10);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -27,6 +37,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseSession();
 
 // Chọn Action và controller nào là trang chủ
 app.MapControllerRoute(
