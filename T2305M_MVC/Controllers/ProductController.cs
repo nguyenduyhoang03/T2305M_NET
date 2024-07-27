@@ -36,7 +36,8 @@ namespace T2305M_MVC.Controllers
         [HttpPost]
         public IActionResult AddToCart(int id)
         {
-            // Code add product to session
+           // Code add product to session
+            
             return null;
         }
     }
