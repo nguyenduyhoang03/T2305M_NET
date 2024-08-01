@@ -27,10 +27,14 @@
     <None Remove="Entities\" />
     <None Remove="DTO\" />
     <None Remove="DTO\ResponseModel\" />
+    <None Remove="DTO\RequestModel\" />
+    <None Remove="DTO\RequestModel\Category\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="DTO\" />
     <Folder Include="DTO\ResponseModel\" />
+    <Folder Include="DTO\RequestModel\" />
+    <Folder Include="DTO\RequestModel\Category\" />
   </ItemGroup>
 </Project>

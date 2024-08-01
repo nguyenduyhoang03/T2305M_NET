@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using T2305M_API.Entities;
 using T2305M_API.DTO.ResponseModel;
+using T2305M_API.DTO.RequestModel.Category;
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace T2305M_API.Controllers
@@ -50,15 +51,55 @@ namespace T2305M_API.Controllers
 
 
         [HttpPost]
-        public IActionResult Create()
+        public IActionResult Create(CreateCategory model)
         {
-            return Ok("Hello POST");
+            try
+            {
+                if (!ModelState.IsValid)
+                    throw new Exception(ModelState.Values.SelectMany(v => v.Errors)
+                        .Select(v => v.ErrorMessage).First());
+                Category data = new Category { Name = model.name };
+                _context.Categories.Add(data);
+                _context.SaveChanges();
+                return Created($"find?id={data.Id}", new CategoryResponse(data));
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         [HttpPut]
-        public IActionResult Update()
+        public IActionResult Update(EditCategory model)
         {
-            return Ok("Hello PUT");
+            try
+            {
+                Category category = _context.Categories.Find(model.id);
+                if (category == null)
+                    throw new Exception("Category not found!");
+                category.Name = model.name;
+                _context.Categories.Update(category);
+                return NoContent();
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                Category category = _context.Categories.Find(id);
+                if (category == null)
+                    throw new Exception("Category not found!");
+                _context.Categories.Remove(category);
+                _context.SaveChanges();
+                return NoContent();
+            }catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
     }
 }
